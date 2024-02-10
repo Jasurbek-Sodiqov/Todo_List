@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --primary: rgba(0, 173, 136, 1);
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#root {
+  width: 1536px;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app {
+  width: 1000px;
+  height: 100%;
+  background: #57493c;
+  color: #fff;
+  padding: 40px;
+}
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+h1 {
+  color: var(--primary);
+}
+.list svg {
+  width: 20px;
+  height: auto;
+}
+.list ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.list li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 17px;
+  list-style: none;
+  background-color: #323130;
+  border-radius: 5px;
+  font-size: 13px;
+  gap: 10px;
+  letter-spacing: 0.2px;
+}
+.enter {
+  width: 920px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 17px;
+  gap: 10px;
+  background-color: #4b4a49;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+.enter svg {
+  width: 20px;
+  height: auto;
+}
+.enter input {
+  width: 100%;
+  height: 50px;
+  background-color: #565453;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.enter input::placeholder {
+  color: var(--primary);
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+.enter button {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  letter-spacing: 0.7px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary);
+}
+.enter button:hover {
+  box-shadow: 0px 0px 5px 0px white;
+  transition: 300ms;
+}
